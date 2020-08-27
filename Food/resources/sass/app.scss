@@ -1,1 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Stint+Ultra+Condensed&display=swap');
+
+// Variables
+@import 'variables';
+
 @import '~bootstrap/scss/bootstrap';
+
+@import url('http://localhost/webLayouts/plugins/fontawesome-5.14.0-web/css/all.css');
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Stint Ultra Condensed', cursive;
+}
+
+h1 { font-size: 4rem; }
+h2 { font-size: 3.4rem; }
+h3 { font-size: 3.05rem; }
+h4 { font-size: 2.70rem; }
+h5 { font-size: 2.35rem; }
+h6 { font-size: 2rem; }
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: $background;
+}
+
+header {
+    float: left;
+    width: 100%;
+    background: #fff;
+    
+    h1 {
+        color: $textcolor;
+        border-bottom: 5px solid $textcolor;
+    }
+
+    ul {
+        float: right;
+        width: 100%;
+        display: table;
+        padding: 0;
+
+        li {
+            display: table-cell;
+            text-align: center;
+            padding-top: 14px;
+            padding-bottom: 14px;
+
+            a {
+                color: $textcolor;
+                font-family: 'Stint Ultra Condensed', cursive;
+                font-size: 2rem;
+
+                &:hover {
+                    opacity: .5;
+                    text-decoration: none;
+                }
+            }
+
+            &:nth-child(1) {
+                background: #f6c90e;
+            }
+
+            &:nth-child(2) {
+                background: #3a4750;
+
+                a {
+
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+            }
+
+            &:nth-child(3) {
+                background: #eeeeee;
+
+                a {
+                    color: #303841;
+                }
+            }
+
+            &:nth-child(4) {
+                background: #303841;
+
+                a {
+
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.banner {
+    float: left;
+    width: 100%;
+    height: 60vh;
+    background: url('/webLayouts/Food/images/b1.jpg') no-repeat center;
+    background-size: 100%;
+
+    .container {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    .box {
+        position: absolute;
+        left: 0;
+        top: 50px;
+        background: #ffffff60;
+        padding: 3rem;
+        color: $textcolor;
+    }
+}
+
+.services {
+    .row {
+        
+        &:nth-child(2) {
+            border-left: 5px solid #000;
+            border-right: 5px solid #000;   
+        }
+
+        section {
+
+            img {
+                float: left;
+                width: 100%;
+            }
+            
+            h3 {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.book {
+    float: left;
+    width: 100%;
+    background: #333 url('http://localhost/webLayouts/Food/images/bg2.png') no-repeat left top;
+    
+    .section1 ,
+    .section2 {
+        
+        &:hover {
+            text-decoration: none;
+            
+            .title {
+                text-decoration: underline;
+            }
+        }
+    }
+    
+    .section1 {
+        background: #fff;
+        color: #333;
+    }
+    
+    .section2 {
+        border: 5px solid #fff;
+        color: #e1e1e1;
+    }
+    
+    .section1 span, 
+    .section2 span {
+        display: block;
+    } 
+    
+    .section1 .title, 
+    .section2 .title {
+        font-family: 'Stint Ultra Condensed', cursive;
+        font-size: 2.4rem;
+        
+        &:after {
+            content: "";
+            height: 1px;
+            background: yellow;
+        }
+    } 
+}
+
+.newslisthp {
+    .row {
+        display: flex;
+        -js-display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        
+        .content {
+            display: flex;
+            flex-direction: column;
+
+            &:hover {
+                opacity: 0.8;
+            }
+
+            img {
+                width: 100%;
+            }
+
+            h5 {
+                margin: 0;
+                a {
+                    color: #333;
+                }
+            }
+            
+            p {
+                margin: 0;
+                color: #333;
+                flex: 1;
+            }
+            
+            footer {
+                color: #858a8e;
+            }
+            
+            h5, p, footer {
+                background: #f6c90e;
+            }
+                
+            &:nth-child(2) {
+            
+                h5, p, footer {
+                    background: #eeeeee;
+                }
+            }
+        }
+    }
+    
+    .viewmore {
+        background: #3a4750;
+        color: #fff;
+        font-family: 'Stint Ultra Condensed', cursive;
+        font-size: 2rem;
+        
+        &:hover {
+            text-decoration: none;
+            opacity: 0.8;
+        }
+    }
+}
+
+footer {
+    background: #333 url('http://localhost/webLayouts/Food/images/bg1.png') no-repeat right bottom;
+    color: #5d5d5d;
+    
+    h6 {
+        color: #f6c90e;
+    }
+    
+    hr {
+        background: #f6c90e;
+        
+        &:after {
+            content: "";
+            float: left;
+            width: 9px;
+            height: 9px;
+            background: #f6c90e;
+            margin-top: -5px;
+            transform: rotate(45deg);
+        }
+    }
+    
+    address {
+        color: #5d5d5d;
+        
+        i {
+            color: #f6c90e;
+        }
+    }
+    
+    .site {
+        
+        li {
+            display: block;
+            
+            a {
+                color: #5d5d5d;
+                text-decoration: none;
+                
+                &:hover {
+                    color: #f6c90e;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+
+    
+    header {
+        
+        ul {
+            float: left;
+            
+            li {
+                display: inline-block;
+                min-width: 50%;
+            }
+        }
+    }
+    
+    .banner {
+        background-size: auto;
+    }
+}
