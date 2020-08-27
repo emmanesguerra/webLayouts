@@ -131,7 +131,7 @@ header {
         
         span {
             font-family: times new roman;
-            font-size: 5rem;
+            font-size: 4rem;
             font-style: italic;
             padding: 20px 75px;
             color: #000000;
@@ -338,6 +338,18 @@ footer {
     .banner {
         background-size: auto;
     }
+    
+    .hbanner {
+        background-size: auto;
+
+        .box {
+
+            span {
+                font-size: 3rem;
+                padding: 20px 55px;
+            }
+        }
+    }
 }
 
 .main {
@@ -392,6 +404,59 @@ footer {
 
             a {
                 color: #f6c90e;
+            }
+        }
+    }
+}
+
+.menu {
+    
+    section {
+        
+        h2 {
+            position: relative;
+            z-index: 5;
+            float: left;
+            padding: 1rem 2rem;
+            margin-left: 30px;
+            background: #fff;
+        }
+        
+        hr {
+            float: left;
+            width: 100%;
+            height: 50px;
+            margin-top: -65px;
+        
+            &:after {
+                content: "";
+                float: left;
+                width: 9px;
+                height: 9px;
+                background: #ccc;
+                margin-top: -5px;
+                transform: rotate(45deg);
+            }
+            
+            &:before  {
+                content: "";
+                float: right;
+                width: 0;
+                height: 0;
+                border-left: 9px solid transparent;
+                border-right: 9px solid transparent;
+                border-top: 9px solid #ccc;
+                font-size: 0;
+                line-height: 0;
+                margin-top: -1px;
+            }
+        }
+        
+        h6 {
+            margin-bottom: 5px;
+            
+            small {
+                color: #c85f49;
             }
         }
     }
