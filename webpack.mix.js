@@ -11,7 +11,12 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.setPublicPath('Food');
+//mix.setPublicPath('Food');
+//
+//mix.js('Food/resources/js/app.js', 'js')
+//    .sass('Food/resources/sass/app.scss', 'css');
+    
+mix.setPublicPath('Resorts');
 
-mix.js('Food/resources/js/app.js', 'js')
-    .sass('Food/resources/sass/app.scss', 'css');
+mix.js('Resorts/resources/js/app.js', 'js')
+    .sass('Resorts/resources/sass/app.scss', 'css');
