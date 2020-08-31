@@ -11,10 +11,10 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Josefin Sans', serif;
 }
 
-h1 { font-size: 3.75rem; }
-h2 { font-size: 3.25rem; }
-h3 { font-size: 2.75rem; }
-h4 { font-size: 2.25rem; }
+h1 { font-size: 3.25rem; }
+h2 { font-size: 2.5rem; }
+h3 { font-size: 2.25rem; }
+h4 { font-size: 2rem; }
 h5 { font-size: 1.75rem; }
 h6 { font-size: 1.25rem; }
 
@@ -113,7 +113,8 @@ header {
     float: left;
     width: 100%;
     color: #565656;
-    background: #a8d2cd;
+    background: #a8d2cd url("/webLayouts/Resorts/images/tree.png") repeat-x bottom;
+    background-size: contain;
     
     section {
         display: flex;
@@ -191,6 +192,63 @@ footer {
         
         &:hover {
             color: #fff;
+        }
+    }
+}
+
+.main {
+    float: left;
+    width: 100%;
+    background: url("/webLayouts/Resorts/images/tree.png") repeat-x bottom;
+}
+
+.aetinymce-content {
+    padding: 1rem;
+    color: #565656;
+
+    h1, h2, h3, h4, h5, h6 {
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    img {
+        float: left;
+    }
+
+    a {
+        color: #0085d2;
+    }
+
+    ul, ol {
+        padding-left: 20px;
+
+        li {
+            padding-left: 5px;
+
+            a {
+                color: #0085d2;
+            }
+        }
+    }
+
+    table {
+        width: 100%;
+        border: 1px solid #0085d2;
+        background: #fff;
+
+        th {
+            background: #0085d2;
+            color: #fff;
+            padding: 10px 20px;
+        }
+
+        td {
+            border: 1px solid #0085d2;
+            padding: 5px 15px;
+
+            a {
+                color: #0085d2;
+            }
         }
     }
 }

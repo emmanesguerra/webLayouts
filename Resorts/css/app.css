@@ -10925,19 +10925,19 @@ h6 {
 }
 
 h1 {
-  font-size: 3.75rem;
-}
-
-h2 {
   font-size: 3.25rem;
 }
 
+h2 {
+  font-size: 2.5rem;
+}
+
 h3 {
-  font-size: 2.75rem;
+  font-size: 2.25rem;
 }
 
 h4 {
-  font-size: 2.25rem;
+  font-size: 2rem;
 }
 
 h5 {
@@ -11045,7 +11045,8 @@ header .welcome a:hover {
   float: left;
   width: 100%;
   color: #565656;
-  background: #a8d2cd;
+  background: #a8d2cd url("/webLayouts/Resorts/images/tree.png") repeat-x bottom;
+  background-size: contain;
 }
 
 .thirdrow section {
@@ -11119,5 +11120,70 @@ footer a {
 
 footer a:hover {
   color: #fff;
+}
+
+.main {
+  float: left;
+  width: 100%;
+  background: url("/webLayouts/Resorts/images/tree.png") repeat-x bottom;
+}
+
+.aetinymce-content {
+  padding: 1rem;
+  color: #565656;
+}
+
+.aetinymce-content h1,
+.aetinymce-content h2,
+.aetinymce-content h3,
+.aetinymce-content h4,
+.aetinymce-content h5,
+.aetinymce-content h6 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.aetinymce-content img {
+  float: left;
+}
+
+.aetinymce-content a {
+  color: #0085d2;
+}
+
+.aetinymce-content ul,
+.aetinymce-content ol {
+  padding-left: 20px;
+}
+
+.aetinymce-content ul li,
+.aetinymce-content ol li {
+  padding-left: 5px;
+}
+
+.aetinymce-content ul li a,
+.aetinymce-content ol li a {
+  color: #0085d2;
+}
+
+.aetinymce-content table {
+  width: 100%;
+  border: 1px solid #0085d2;
+  background: #fff;
+}
+
+.aetinymce-content table th {
+  background: #0085d2;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.aetinymce-content table td {
+  border: 1px solid #0085d2;
+  padding: 5px 15px;
+}
+
+.aetinymce-content table td a {
+  color: #0085d2;
 }
 
