@@ -11002,6 +11002,10 @@ header {
   border-left: 1px solid #008cd9;
 }
 
+.navrow .nav .nav-item.active .nav-link {
+  background: #004280;
+}
+
 .navrow .nav .nav-item .nav-link:hover {
   background: #004280;
 }
